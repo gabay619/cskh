@@ -17,7 +17,7 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('tan');
+		return View::make('tan123');
 	}
 
 }
