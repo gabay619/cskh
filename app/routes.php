@@ -13,5 +13,11 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return Auth::user()->username;
+});
+
+Route::group(array('before' => 'auth'), function()
+{
+    \Route::get('elfinder', 'Barryvdh\Elfinder\ElfinderController@showIndex');
+    \Route::any('elfinder/connector', 'Barryvdh\Elfinder\ElfinderController@showConnector');
 });

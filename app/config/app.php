@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -121,6 +121,15 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+        'Way\Generators\GeneratorsServiceProvider',
+		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+		'Barryvdh\Debugbar\ServiceProvider',
+		'Frozennode\Administrator\AdministratorServiceProvider',
+		'Regulus\ActivityLog\ActivityLogServiceProvider',
+		'mnshankar\RoleBasedAuthority\RoleBasedAuthorityServiceProvider',
+		'Barryvdh\Elfinder\ElfinderServiceProvider',
+		'Pingpong\Widget\WidgetServiceProvider',
+		'Artdarek\OAuth\OAuthServiceProvider',
 
 	),
 
@@ -188,6 +197,11 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+        'Debugbar' 			=> 'Barryvdh\Debugbar\Facade',
+        'Activity' 			=> 'Regulus\ActivityLog\Activity',
+        'Authority'         => 'mnshankar\RoleBasedAuthority\Facades\Authority',
+        'Widget' 		    => 'Pingpong\Widget\Facades\Widget',
+        'OAuth'			    => 'Artdarek\OAuth\Facade\OAuth',
 
 	),
 

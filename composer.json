@@ -4,7 +4,17 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+        "way/generators": "~2.0",
+        "barryvdh/laravel-ide-helper": "1.*",
+        "barryvdh/laravel-debugbar": "1.*",
+        "frozennode/administrator": "4.*",
+        "regulus/activity-log": "0.3.1",
+        "mnshankar/role-based-authority": "v1.4",
+        "barryvdh/laravel-elfinder": "0.1.x",
+        "pingpong/widget" : "1.0.*",
+        "gregwar/captcha": "dev-master",
+        "artdarek/oauth-4-laravel": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
@@ -23,6 +33,7 @@
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
+            "php artisan ide-helper:generate",
 			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
