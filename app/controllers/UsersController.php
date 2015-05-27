@@ -4,7 +4,7 @@ use Oauth2\PlaygateIDOauth2;
 
 class UsersController extends \BaseController {
 
-    public function login(){
+    public function postLogin(){
         $username = Input::get('username');
         $password = Input::get('password');
         $url = Input::get('url');
@@ -15,8 +15,7 @@ class UsersController extends \BaseController {
         return Response::json(array('success'=>true, 'url'=>$signinByTicketUrl));
     }
 
-    public function ssoLoginCallback(){
-        session_start();
+    public function getSsoLoginCallback(){
         $playgateIDOauth2 = new PlaygateIDOauth2();
         list($accessToken,$userInfo)=$playgateIDOauth2->loginCallback();
 
