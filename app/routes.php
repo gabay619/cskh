@@ -16,6 +16,8 @@ Route::get('/', function()
 	return Auth::user()->username;
 });
 
+Route::controller('users', 'UsersController');
+
 Route::group(array('before' => 'auth'), function()
 {
     \Route::get('elfinder', 'Barryvdh\Elfinder\ElfinderController@showIndex');
