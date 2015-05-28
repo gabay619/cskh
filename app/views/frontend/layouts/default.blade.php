@@ -90,6 +90,7 @@
                                                 password:password, username:username,url:retUrl
                                             }
                                             ,function(result){
+                                            console.log(result);
                                                 if(result.success){
                                                     window.location.href = result.url;
                                                 }else{
