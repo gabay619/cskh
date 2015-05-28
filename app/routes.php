@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function()
-{
-	return Auth::user()->username;
-});
+Route::get('/','HomeController@getIndex');
 
 Route::controller('users', 'UsersController');
 
