@@ -21,7 +21,7 @@ class PlaygateIDOauth2{
 
 	function __construct(){
 		$this->_app_id='hotro_maxgate_vn';
-		$this->_app_secret='123456';
+		$this->_app_secret='fhGJHGE4656sdf';
 		$this->_login_redirect_uri='http://hotro.maxgate.vn/users/sso-login-callback';
 		$this->_base_url='https://id.maxgate.vn';
 	}
