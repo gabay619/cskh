@@ -53,13 +53,13 @@
                             </div>
                             <!--------form-login--------------->
                             <div class="content_login">
-                                <form action="">
+                                <form action="#">
                                     <div class="form-group">
-                                        <input class="form-control" placeholder="Địa chỉ email:" required="required"
-                                               autofocus="autofocus" name="username" type="text">
+                                        <input class="form-control" placeholder="Username:" required="required"
+                                               autofocus="autofocus" name="username" id="txtUsername" type="text">
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" placeholder="Mật khẩu:" required="required"
+                                        <input class="form-control" placeholder="Mật khẩu:" id="txtPassword" required="required"
                                                name="password" type="password">
                                     </div>
                                     <div class="form-group">
@@ -73,13 +73,32 @@
                                         </div>
                                     </div>
                                     <div class="btnwrapper">
-                                        <button type="submit" class="btn btn-primary btn-block btnlogin "> Đăng nhập
+                                        <button type="button" class="btn btn-primary btn-block btnlogin " onclick="login();"> Đăng nhập
                                         </button>
                                         <p>Hoặc</p>
                                         <a href="#" class="social_fb"></a>
                                         <a href="#" class="social_gg"></a>
                                     </div>
                                 </form>
+                                <script>
+                                function login(){
+                                        username = $('#txtUsername').val();
+                                        password = $('#txtPassword').val();
+                                        retUrl = window.location.href;
+
+                                        $.post('/users/login',{
+                                                password:password, username:username,url:retUrl
+                                            }
+                                            ,function(result){
+                                                if(result.success){
+                                                    window.location.href = result.url;
+                                                }else{
+                                                    alert("Thông tin đăng nhập không hợp lệ");
+                                                    $('#username').focus();
+                                                }
+                                            },'json');
+                                    }
+                                </script>
                             </div>
                         </div>
                     @endif
