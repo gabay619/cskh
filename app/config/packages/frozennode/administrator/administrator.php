@@ -64,7 +64,10 @@ return array(
 	 */
 	'permission'=> function()
 	{
-		return Auth::check();
+        if(!Auth::user() || (!Auth::user()->hasRole('super-admin'))){
+            return App::abort('403', 'Bạn không có quyền truy cập.');
+        }
+        return Auth::check();
 	},
 
 	/**
