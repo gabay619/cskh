@@ -51,9 +51,10 @@ return array(
 	 * 		'Analytics' => array('E-Commerce' => 'page.ecommerce.analytics'),
 	 *	)
 	 */
-	'menu' => array(
+    'menu' => array(
         'users',
-        'activity_log'
+        'activity_log',
+        'Thiết lập'=>array('games', 'game_servers', 'problems')
     ),
 
 	/**

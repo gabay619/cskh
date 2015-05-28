@@ -13,8 +13,8 @@
 
 App::before(function($request)
 {
-//	$user = User::find(1);
-//    Auth::login($user);
+	$user = User::find(1);
+    Auth::login($user);
 });
 
 
