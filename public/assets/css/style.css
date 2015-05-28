@@ -1,0 +1,865 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+background-color: #f1f1f1;
+
+}
+
+header{
+    padding: 3px 0;
+}
+
+header .container{
+    width: 1000px; !important;
+    padding: 0;
+
+
+}
+
+header .container .logo{
+    width: 273px;
+    float:left;
+
+}
+header .container .banner{
+    width: calc(100% - 273px);
+    float:left;
+
+}
+
+main {
+    position: relative;
+    padding-top: 5px;
+}
+main .container{
+    width: 1000px; !important;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #d7d7d7;
+    border-bottom: none;
+
+
+
+}
+
+
+main  .sidebar
+{
+    width: 273px;
+    float:left;
+
+
+}
+main  .sidebar .wrap_sidebar
+{
+
+    float: left;
+    width: 100%;
+}
+
+
+main  .sidebar .wrap_sidebar .block_login .head_login
+{
+    margin-top: 27px;
+    float: left;
+    border-bottom: 1px solid #d7d7d7;
+    width: 100%;
+    height: 45px;
+
+}
+
+main  .sidebar .wrap_sidebar .block_login .head_login .wellcome
+{
+    width: 117px;
+    margin-left: 13px;
+    margin-right: 6px;
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+
+
+
+}
+main  .sidebar .wrap_sidebar .block_login .head_login .wellcome a
+{
+    font-size: 13px;
+    color: #194d8c;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Calibri";
+}
+
+main  .sidebar .wrap_sidebar .block_login .head_login .btn_action
+  {
+      float: left;
+  }
+
+main  .sidebar .wrap_sidebar .block_login .head_login .btn_action a
+{
+
+    border: 1px solid #f16725;
+    padding: 11px 31px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Calibri";
+    color: #f16725;
+
+}
+main  .sidebar .wrap_sidebar .block_login .head_login .btn_action a:hover
+{
+
+    text-decoration: none;
+    background-color: #f16725 !important;
+    color: #ffffff;
+
+}
+
+
+main .container .content
+{
+    width: calc(100% - 273px);
+    background-color: #ffffff;
+    border-left: 1px solid #d7d7d7;
+    float:left;
+    min-height: 600px;
+
+}
+
+
+
+main  .sidebar .wrap_sidebar .block_login .content_login
+{
+    width: 100%;
+    float: left;
+    padding-top: 15px;
+    padding-left: 14px;
+    padding-right: 15px;
+    margin-bottom: 22px;
+}
+main  .sidebar .wrap_sidebar .block_login .content_login form{
+
+
+}
+
+main  .sidebar .wrap_sidebar .block_login .content_login form .form-group input.form-control
+{
+    border-radius: 0;
+}
+
+main  .sidebar .wrap_sidebar .block_login .content_login form .btnlogin
+{
+    width: 109px;
+    background-color: #f16725 !important;
+    border-radius: 0 !important;
+    border: 1px solid #f16725 !important;
+}
+main  .sidebar .wrap_sidebar .block_login .content_login form .btnlogin:hover
+{
+    background-color: #fb7c40 !important;
+}
+
+main  .sidebar .wrap_sidebar .block_login .content_login form .btnwrapper
+{
+    float: left;
+    width:100%;
+
+}
+
+main  .sidebar .wrap_sidebar .block_login .content_login form .btnwrapper button
+{
+    float: left;
+    width: 109px;
+
+}
+main  .sidebar .wrap_sidebar .block_login .content_login form .btnwrapper p
+{
+    float: left;
+    margin-top: 7px;
+    margin-left: 7px;
+
+}
+
+main  .sidebar .wrap_sidebar .block_login .content_login form .social_fb
+{
+    width: 39px;
+    height: 39px;
+    display: block;
+    float: left;
+    background: url('../images/social.png') -3px -3px;
+    margin-left: 8px;
+
+}
+
+main  .sidebar .wrap_sidebar .block_login .content_login form .social_gg
+{
+    width: 39px;
+    height: 39px;
+    display: block;
+    float: left;
+    margin-left: 3px;
+    background: url('../images/social.png') -51px -3px;
+
+}
+
+main  .sidebar .wrap_sidebar .hotline{
+
+    padding-left: 1px;
+}
+
+
+main  .sidebar .wrap_sidebar .worktime{
+    margin-top: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
+    float: left;
+
+
+}
+main  .sidebar .wrap_sidebar .worktime p{
+     font-weight: bold;
+     text-transform: uppercase;
+     font-family: "Calibri";
+     color: #375e95;
+    float: left;
+
+ }
+
+
+main  .sidebar .wrap_sidebar .worktime .time_row
+{
+    width: 100%;
+    white-space: nowrap;
+
+}
+main  .sidebar .wrap_sidebar .worktime .time_row .day
+{
+    font-size: 14px;
+    font-family: "Calibri";
+    color: #3a3a3a;
+    width: 156px;
+    float: left;
+
+
+}
+
+main  .sidebar .wrap_sidebar .worktime .time_row .oclock
+{
+    font-size: 14px;
+    font-family: "Calibri";
+    color: #f16725;
+    float: left;
+
+}
+
+main  .sidebar .wrap_sidebar .worktime .time_row{
+    border-bottom: 1px dotted #e5e5e5;
+    float: left;
+    padding: 5px 0;
+
+}
+
+.clear{clear:both}
+
+
+main .content .breacum
+{
+    background-color: #f1f1f1;
+    height: 72px;
+    padding-top: 25px;
+    padding-left: 23px;
+    border-bottom: 1px solid #d7d7d7;
+    position: relative;
+}
+
+main .content .breacum h2
+{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: "Calibri";
+    color: #3a3a3a;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main .content .breacum .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 9px solid #f1f1f1;
+    position: absolute;
+    bottom: -9px;
+    left: 47px;
+}
+
+
+main .content .block_infomation
+{
+    width: 100%;
+    padding:32px 26px 32px 30px
+
+}
+
+
+
+main .content .panel-group .panel-title a {
+    background: url("../images/collapse_right.png") no-repeat center left;
+    padding-left: 1em;
+    display: block;
+    color: #3a3a3a;
+    text-decoration: none;
+}
+main .content  .panel-group .panel-title a:hover {
+    text-decoration: none;
+}
+main .content .panel-group .panel-title.active a {
+    background: url("../images/collapse_down.png") no-repeat center left;
+    background: url("../images/collapse_down.png") no-repeat center left;
+    color: #f1733d;
+    text-decoration: none;
+}
+
+a,a:hover, a:active, a:focus {
+    /* styling for any way a link is about to be used */
+    outline: 0;
+
+}
+a{
+    text-decoration: none !important;
+}
+
+
+footer {
+    background: url(../images/footer_bg.jpg) repeat-x;
+    background-size: auto 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+footer .container
+{
+    width: 1000px !important;
+}
+footer .contact {
+    padding-top: 10px;
+}
+footer .contact p {
+    color: #ffdbbc;
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+footer .contact a {
+    color: #ffdbbc;
+}
+footer .contact a:hover {
+    text-decoration: none;
+}
+footer ul {
+    padding-top: 2.5em;
+    clear: right;
+
+}
+footer ul li {
+    margin-left: 0.417em;
+}
+footer ul li a {
+    color: #ffdbbc;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+footer .logo-phucthanh {
+    width: 143px;
+    height: 90px;
+    background: url(../images/logo-phucthanh.png) no-repeat 0 10px;
+    opacity: 0.9;
+}
+
+
+
+/*----------------------------------------------login page----------------------------------------*/
+.wellcome_logged{
+
+    float:left;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Calibri";
+    padding-left: 13px;
+    width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.wellcome_logged a{
+    color: #194d8c;
+
+}
+
+
+
+main  .sidebar .wrap_sidebar .block_login .head_login .btn_logout
+{
+
+    float:right;
+
+}
+
+main  .sidebar .wrap_sidebar .block_login .head_login .btn_logout a
+{
+
+    border: 1px solid #d7d7d7;
+    padding: 11px 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Calibri";
+    color: #8f8f8f;
+    margin-right: 15px;
+
+
+}
+
+main  .sidebar .wrap_sidebar .block_login .head_login .btn_logout a:hover
+{
+    background-color: #f1f1f1;
+    text-decoration: none;
+}
+
+
+
+
+
+main  .sidebar .wrap_sidebar .block_login .content_login .yc_new
+{
+    background: url(../images/icon_email.png) no-repeat 8px 6px;
+    padding-left: 2.2em;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #e1e1e1;
+}
+
+main  .sidebar .wrap_sidebar .block_login .content_login .yc_new a
+{
+    font-family: "Calibri";
+    font-size: 15px;
+    color: #5e5652;
+}
+main  .sidebar .wrap_sidebar .block_login .content_login .yc_new a:hover
+{
+
+    color: #194d8c;
+    text-decoration: none;
+}
+
+
+main  .sidebar .wrap_sidebar .block_login .content_login .yc_replied
+{
+    background: url(../images/icon_email.png) no-repeat 8px -26px;
+    border-bottom: 1px dotted #e1e1e1;
+    padding-bottom: 8px;
+
+    padding-left: 2.2em;
+
+}
+
+main  .sidebar .wrap_sidebar .block_login .content_login .yc_replied a
+{
+    font-family: "Calibri";
+    font-size: 15px;
+    color: #5e5652;
+}
+main  .sidebar .wrap_sidebar .block_login .content_login .yc_replied a:hover
+{
+    color: #194d8c;
+    text-decoration: none;
+}
+
+
+
+main  .sidebar .wrap_sidebar .block_login .content_login .yc_finish
+{
+    background: url(../images/icon_email.png) no-repeat 8px -52px;
+    padding-left: 2.2em;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #e1e1e1;
+}
+
+main  .sidebar .wrap_sidebar .block_login .content_login .yc_finish a
+{
+    font-family: "Calibri";
+    font-size: 15px;
+    color: #5e5652;
+}
+main  .sidebar .wrap_sidebar .block_login .content_login .yc_finish a:hover
+{
+    color: #194d8c;
+    text-decoration: none;
+}
+
+
+
+main  .sidebar .wrap_sidebar .block_login .content_login .new_yc
+{
+    float: right;
+
+}
+
+/*----------------------------------------------yêu cầu mới page----------------------------------------*/
+
+
+.nopadding
+{
+    padding: 0 !important;
+    margin: 0 !important;
+
+
+}
+
+.btn-uploadpic
+{
+
+    background-color: #f4f4f4;
+    border-radius: 0 !important;
+    border: 1px solid #ccced2;
+}
+
+
+.btn_guiyeucau
+{
+    background-color: #ff9326;
+    border: 1px solid #ff9326;
+    width: 146px;
+    color: #ffffff;
+    border-radius: 0 !important;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Calibri";
+}
+
+.btn_guiyeucau:hover
+{
+
+    color: #ffffff;
+    background-color: #fb7c40 !important;
+}
+
+main .content .breacum .btn_new {
+    position: absolute;
+    right: 13px;
+    top:15px;
+    border: 1px solid #ff9326;
+    background-color: #ff9326;
+    color: #fff;
+    font-family: "Calibri";
+    font-weight: bold;
+    padding: 9px 22px 9px 41px;
+    text-transform: uppercase;
+
+}
+
+main .content .breacum .btn_new:hover {
+
+    background-color: #fb7c40;
+
+}
+
+
+main .content .breacum .btn_new .icon_new {
+
+    background-image: url("../images/icon_edit.png");
+    background-position: center center;
+    height: 15px;
+    left: 19px;
+
+    position: absolute;
+    top: 11px;
+    width: 15px;
+}
+
+main .content .block_infomation .table_yc tr>td
+{
+    font-family: "Calibri";
+    font-size: 15px;
+    padding: 0 !important;
+    border: none;
+    height: 35px;
+    line-height: 35px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+main .content .block_infomation .table_yc tr>td:first-child
+{
+    padding-left: 8px !important;
+    max-width: 408px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+main .content .block_infomation .table_yc tr>td:first-child a
+{
+    color: #3a3a3a;
+}
+main .content .block_infomation .table_yc tr>td:first-child a:hover
+{
+    color: #194d8c;
+}
+
+main .content .block_infomation .table_yc tr>td:nth-child(2)
+{
+    font-size: 13px;
+    color: #6d6d6d;
+    text-align: center;
+}
+main .content .block_infomation .table_yc tr>td:nth-child(3)
+{
+    font-size: 13px;
+    color: #6d6d6d;
+    text-align: center;
+}
+
+
+
+main .content .block_infomation .table_yc tr>td:nth-child(4) a
+ {
+     width: 27px;
+     height: 22px;
+     background: url("../images/btn_delete.png");
+     display: block;
+     margin-top: 7px;
+
+     float: right;
+     margin-right: 7px;
+ }
+
+
+
+
+main .content .block_infomation .table_yc tr>td:nth-child(4) a:hover
+{
+    background: url("../images/btn_delete_hover.png");
+}
+
+main .content .list_yeucau
+{
+    width: 100%;
+    padding:20px 14px 20px 14px !important;
+}
+
+
+main .content .list_yeucau .icon-arrow
+{
+    background-image: url("../images/arrow.png");
+    width: 9px;
+    height: 9px;
+    position: relative;
+    top:1px;
+    margin-right: 8px;
+
+}
+
+
+.red{
+    color: #ff0000 !important;
+}
+
+main .content .block_infomation .lbl_info_yc
+{
+    width: 65px;
+    font-size: 15px;
+    color: #3a3a3a;
+
+    font-family: "Calibri";
+
+}
+
+
+main .content .block_infomation .lbl_info_txt
+{
+    width: 59px;
+    font-size: 15px;
+    color: #194d8c;
+    font-family: "Calibri";
+    display: inline;
+
+}
+
+
+main .content .block_infomation .reply_block
+{
+
+}
+
+main .content .block_infomation .reply_block .breadcum
+{
+    background-color: #f1f1f1;
+    height: 28px;
+    padding-top: 6px;
+    padding-left: 10px;
+    border: 1px solid #d7d7d7;
+    position: relative;
+
+}
+
+main .content .block_infomation .reply_block .breadcum h2
+{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: "Calibri";
+    color: #194d8c;
+    font-weight: bold;
+
+
+}
+
+main .content .block_infomation .reply_block .message
+{
+    background-color: #f9f8f8;
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    padding:20px;
+    font-size: 14px;
+    font-family: "Calibri";
+}
+
+main .content .block_infomation .reply_admin
+{
+    padding-left:32px;
+}
+main .content .block_infomation .reply_admin h2
+{
+    color: #ff0000 !important;
+}
+main .content .block_infomation .reply_admin .message
+{
+    color: #ff0000;
+}
+
+main .content .block_infomation .reply_admin img
+{
+    width: 16px;
+    height: 17px;
+    position: absolute;
+    top:4px;
+    left: -23px;
+}
+
+
+.tri-down {
+
+    /* Styling block element, not required */
+    position: relative;
+
+    padding: 1em;
+    border-bottom: 1px solid #999;
+    background: #f3f3f3;
+}
+
+
+main .content  .tri-down:before {
+    bottom: -12px;
+    left: 47px;
+
+    /* If 1px darken stroke slightly */
+    border-top-color: #e6e6e6;
+    border-width: 11px;
+}
+
+
+/* Fill */
+main .content  .tri-down:after {
+    bottom: -10px;
+    left: 48px;
+    border-top-color: #f3f3f3;
+    border-width: 10px;
+}
+
+/* Required for Down Triangle */
+.tri-down:before, .tri-down:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+}
+
+/* Stroke */
+main .content .block_infomation .reply_block .tri-down:before {
+    bottom: -12px;
+    left: 21px;
+
+    /* If 1px darken stroke slightly */
+    border-top-color: #e6e6e6;
+    border-width: 11px;
+}
+
+/* Fill */
+main .content .block_infomation .reply_block .tri-down:after {
+    bottom: -10px;
+    left: 22px;
+    border-top-color: #f3f3f3;
+    border-width: 10px;
+}
+
+
+
+main .content .block_infomation .question_done
+{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "Calibri";
+    color: #484848;
+}
+
+
+main .content .block_infomation  .btn_continous
+{
+    background-color: #f4f4f4;
+    border: 1px solid #ccced2;
+    width: 146px;
+    color: #484848;
+    border-radius: 0 !important;
+    font-size: 15px;
+
+    font-family: "Calibri";
+}
+
+
+main .content .block_infomation  .btn_continous:hover
+{
+    background-color: #f1f1f1;
+
+}
+
+.btn_done
+{
+
+    background-color: #ff9326;
+    border: 1px solid #ff9326;
+    width: 146px;
+    color: #ffffff;
+    border-radius: 0 !important;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Calibri";
+}
+
+
+.btn_done:hover
+{
+    color: #ffffff;
+    background-color: #fb7c40 !important;
+}
