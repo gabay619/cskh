@@ -202,6 +202,8 @@ return array(
         'Authority'         => 'mnshankar\RoleBasedAuthority\Facades\Authority',
         'Widget' 		    => 'Pingpong\Widget\Facades\Widget',
         'OAuth'			    => 'Artdarek\OAuth\Facade\OAuth',
+        'Captcha' => 'Mews\Captcha\Facades\Captcha',
+
 
 	),
 

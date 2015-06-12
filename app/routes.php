@@ -13,7 +13,7 @@
 
 Route::get('/','HomeController@getIndex');
 
-Route::resource('question', 'QuestionController');
+Route::controller('question', 'QuestionController');
 
 Route::controller('users', 'UsersController');
 
