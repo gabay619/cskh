@@ -10,7 +10,7 @@ class HomeController extends \BaseController {
 
 
     public function  getIndex(){
-        return View::make('frontend.pages.home');
+        return View::make('frontend.home');
     }
 
 

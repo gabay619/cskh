@@ -80,3 +80,5 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+define('QUESTION_IMG_TYPE', 'QUESTION-IMG');

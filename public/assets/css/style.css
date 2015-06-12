@@ -530,6 +530,30 @@ main  .sidebar .wrap_sidebar .block_login .content_login .new_yc
 }
 
 
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    border-radius: 0 !important;
+    border: 1px solid #ccced2;
+    width: 147px !important
+
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+
+
 .btn_guiyeucau
 {
     background-color: #ff9326;

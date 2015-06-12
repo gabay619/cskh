@@ -13,6 +13,8 @@
 
 Route::get('/','HomeController@getIndex');
 
+Route::controller('question', 'QuestionController');
+
 Route::controller('users', 'UsersController');
 
 Route::group(array('before' => 'auth'), function()
