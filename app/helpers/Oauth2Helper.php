@@ -9,6 +9,8 @@ use Oauth2\PlaygateIDRestClient;
 class Oauth2Helper{
 	private static $accounts;
 
+    const BASE_URL = 'https://id.maxgate.vn';
+
 	public static function storeToken($accessToken=array()){
 		Session::put('oauth2_token',$accessToken);
 	}
