@@ -38,7 +38,7 @@
                         <div class="block_login">
                             <div class="head_login">
                                 <div class="wellcome_logged">Xin chào,<a class="" href=""> {{ Auth::user()->username }}</a></div>
-                                <div class="btn_logout"><a class="" href="/logout">Thoát</a></div>
+                                <div class="btn_logout"><a href="{{Oauth2Helper::BASE_URL}}/users/logout?return_url={{URL::to('/')}}">Thoát</a></div>
                             </div>
                             <!--------form-login--------------->
                             <div class="content_login">

@@ -36,4 +36,14 @@ class UsersController extends \BaseController {
         return View::make('users.sso-image');
     }
 
+    public function ssoLogoutCallback(){
+        session_start();
+        $playgateIDOauth2 = new PlaygateIDOauth2();
+        Auth::logout();
+        Oauth2Helper::forgetToken();
+        //sinh lai PHPSESSID trong truong hop play-trial
+        session_regenerate_id(true);
+        $playgateIDOauth2->returnImage();
+    }
+
 }
