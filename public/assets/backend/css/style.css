@@ -1,0 +1,48 @@
+.accounts {
+	max-width: 400px;
+	margin:50px auto;
+	border-radius: 4px;
+}
+.accounts {
+	background-color: #f5f5f9;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.account-header,
+.account-footer {
+	padding: 15px 25px;
+	border-style: solid;
+	border-color: #e4e4e4;
+}
+.account-header {
+	border-width: 0 0 1px;
+}
+.account-footer {
+	border-width: 1px 0 0;
+}
+.account-header span {
+	color: #607080;
+	font-size: 18px;
+	font-weight: 700;
+}
+.account-content {
+	padding: 20px 25px;
+}
+.account-error {
+	font-size: 13px;
+	font-weight: 400;
+}
+.form-field {
+	margin-bottom: 20px;
+}
+.notice
+{
+    margin-top: 50px;
+}
+
+
+table.tablesorter thead tr .header
+{
+    cursor: pointer;
+}

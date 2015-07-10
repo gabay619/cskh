@@ -1,0 +1,1 @@
+C:\xampp\htdocs\gameportal\app/views/news/show.blade.php
