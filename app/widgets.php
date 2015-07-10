@@ -19,3 +19,15 @@ Widget::register('captcha',function($typeCaptcha)
     Session::put($typeCaptcha, $builder->getPhrase());
     return View::make('frontend.widget.captcha')->with('captcha',$captcha);
 });
+
+
+
+
+Widget::register('login_block',function()
+{
+    $countQuestion=Question::where("user_id","=",Auth::user()->id)
+        ->where("solve","=",0)
+        ->orderBy('created_at','desc')->count();
+
+    return View::make('frontend.widget.login')->with(array('countQuestion'=>$countQuestion));
+});

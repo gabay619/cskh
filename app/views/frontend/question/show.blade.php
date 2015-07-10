@@ -44,8 +44,8 @@
 
 
                             @if($allImage->count()>$i)
-                            <a href="{{{$allImage[$i]['path']==""?"#":"uploads".$allImage[$i]['path']}}}">
-                                <img src="{{{$allImage[$i]['path']==""?"/assets/images/noimage.jpg":"/uploads/".$allImage[0]['path']}}}" width="215px" height="138px" class="thumbnail ">
+                           <a href="{{{$allImage[$i]['path']==""?"#":"/uploads/".$allImage[$i]['path']}}}">
+                                <img src="{{{$allImage[$i]['path']==""?"/assets/images/noimage.jpg":"/uploads/".$allImage[$i]['path']}}}" width="215px" height="138px" class="thumbnail ">
                             </a>
                             @else
                                 <a href="#">
@@ -58,6 +58,7 @@
                         @endfor
                     </div>
 
+
                     <div class="reply_block">
                         <div class="breadcum tri-down">
                             <h2 class="">{{{$question->user->username}}}</h2>
@@ -68,24 +69,42 @@
                         </div>
                     </div>
 
-                    <div class="reply_block reply_admin">
-                        <div class="breadcum tri-down">
-                            <h2 class="">Admin, Tân:</h2>
-                            <img src="/assets/images/reply_arrow.png" alt=""/>
+                    @foreach($allComment as $item)
+                        @if($item->is_admin==1)
+                            <div class="reply_block reply_admin">
+                                <div class="breadcum tri-down">
+                                    <h2 class="">Admin - Quản trị viên:</h2>
+                                    <img src="/assets/images/reply_arrow.png" alt=""/>
 
-                        </div>
-                        <div class="message">
-                            Không còn đâu bạn ơi
-                            cảm ơn bạn đã sử dụng dịch vụ. tặng bạn 1000k KNB
-                        </div>
-                    </div>
+                                </div>
+                                <div class="message">
+                                    {{{$item->content}}}
+                                </div>
+                            </div>
+                        @else
+                             <div class="reply_block">
+                                <div class="breadcum tri-down">
+                                    <h2 class="">{{{$question->user->username}}}</h2>
+
+                                </div>
+                                <div class="message">
+                                    {{$question->content}}
+                                </div>
+                            </div>
+
+                        @endif
+                    @endforeach
+
+
 
                     <p class="question_done">Câu trả lời của Admin đã giải quyết được thắc mắc của bạn?</p>
 
                     <div class="row " style="" >
                         <div class="col-sm-3">
                             <div class="form-group ">
-                                <button class="btn btn_done" type="button">Đã giải quyết xong</button>
+                                 <a href="/question/update-resolved/{{$question->id}}"  class="btn btn_done">Đã giải quyết xong</a>
+
+
                             </div>
                         </div>
 
@@ -104,7 +123,7 @@
                             </div>
                         </div>
                         <div class="row nopadding">
-                            
+
                             <div class="col-sm-3 nopadding" style="width: 15% !important;">
                                 <label style="font-family: 'Calibri';font-size: 15px;color: #3a3a3a;font-weight: normal;margin-top: 5px" >Nhập captcha</label>
                             </div>
@@ -123,10 +142,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
                     <div class="gamebanner">
                         <div class="row">
                             <div class="col-sm-6"><a href="#" target="_blank"><img src="/assets/images/bn1.jpg" alt=""/></a></div>

@@ -1,7 +1,7 @@
 <?php
 
 class Question extends \Eloquent {
-	protected $fillable = ['game_id','server_id','user_id','character_name','title','content','phone','solve'];
+	protected $fillable = ['game_id','server_id','user_id','character_name','title','content','phone','solve','replied'];
 
     protected $table = 'questions';
 
