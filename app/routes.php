@@ -22,3 +22,32 @@ Route::group(array('before' => 'auth'), function()
     \Route::get('elfinder', 'Barryvdh\Elfinder\ElfinderController@showIndex');
     \Route::any('elfinder/connector', 'Barryvdh\Elfinder\ElfinderController@showConnector');
 });
+
+
+
+Route::group(array('prefix' => 'admin'), function(){
+
+Route::get('/',array('as'=>'admin.get-dashboard',function()
+{
+    return View::make('admin.index');
+}));
+
+
+
+Route::resource('question', 'AdminQuestionController',
+    [ 'names' =>
+        [
+            'index' => 'admin.question.index',
+            'create'=>'admin.question.create',
+            'store' => 'admin.question.store',
+            'show' => 'admin.question.show',
+            'update' => 'admin.question.update',
+            'destroy' => 'admin.question.destroy',
+
+        ]
+    ]
+);
+    Route::get('/question/solved/{id}','AdminQuestionController@getResolved');
+
+});
+Route::get('/question/update-resolved/{id}','QuestionController@getUpdateResolved');

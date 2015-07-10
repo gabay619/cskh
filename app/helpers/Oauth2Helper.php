@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Session;
-use Log;
-use stdClass;
 use Oauth2\PlaygateIDOauth2;
 use Oauth2\PlaygateIDRestClient;
 

@@ -115,7 +115,27 @@
             <div class="col-sm-12 nopadding" style="margin:10px 0 !important;" >
                 <div class="form-group" style="margin-bottom: 9px;">
                     {{ Form::textarea('content', Input::old('content'), array('class'=>'form-control ','id'=>'contentContainer'))}}
-                    <script>CKEDITOR.replace('contentContainer');</script>
+                    <script>
+
+                    CKEDITOR.replace('contentContainer', {
+                    	toolbar: [
+                    		{ name: 'document', items: ['NewPage', 'Preview', '-', 'Templates' ] },	// Defines toolbar group with name (used to create voice label) and items in 3 subgroups.
+                    		[ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ],			// Defines toolbar group without name.
+                    		//'/',																					// Line break - next group will be placed in new line.
+                    		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline' ] },
+                    		{ name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+                    		{ name: 'links', items: [ 'Link', 'Unlink' ] },
+                            { name: 'insert', items: [ 'Image' ] },
+                            { name: 'styles', items: [ 'Styles', 'Format', 'Font', 'FontSize' ] },
+                            { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
+                    	]
+                    });
+
+
+                    </script>
+
+
+
                 </div>
             </div>
 

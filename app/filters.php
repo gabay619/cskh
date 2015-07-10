@@ -34,6 +34,37 @@ App::after(function($request, $response)
 |
 */
 
+
+
+Route::filter('auth.admin', function()
+{
+
+    if (Auth::guest())
+    {
+
+        if (Request::ajax())
+        {
+            return Response::make('Unauthorized', 401);
+        }
+        else
+        {
+
+            return Redirect::guest(URL::route('/'));
+        }
+
+
+    }
+    //check quyen
+    else{
+        if(Auth::user()->idrole!=1)
+        {
+            return Redirect::to('/');
+        }
+    }
+
+});
+
+
 Route::filter('auth', function()
 {
 //	if (Auth::guest())

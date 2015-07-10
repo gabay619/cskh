@@ -780,6 +780,28 @@ main .content .block_infomation .reply_admin img
 }
 
 
+
+.dashboard .panel .panel-title a
+{
+    font-weight: bold;
+    font-family: "Calibri" !important;
+    font-size: 14px !important;
+    color: #3a3a3a;
+
+}
+
+.dashboard .panel .panel-body
+{
+    padding-left: 63px !important;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Calibri";
+    color: #6c6c6c;
+
+}
+
+
 .tri-down {
 
     /* Styling block element, not required */

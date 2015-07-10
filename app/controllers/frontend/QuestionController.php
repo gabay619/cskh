@@ -16,7 +16,9 @@ class QuestionController extends \BaseController
 
     public function getIndex()
     {
-        $allQuestion=Question::orderBy('created_at','desc')->get();
+        $allQuestion=Question::where("user_id","=",Auth::user()->id)->where("solve","=",0)
+            ->orderBy('created_at','desc')->get();
+
         return View::make('frontend.question.index')->with(array('allQuestion'=>$allQuestion));
 
     }
@@ -209,6 +211,35 @@ class QuestionController extends \BaseController
             return Redirect::back()->with('success','Xóa thành công !');
         }
         return Redirect::back()->with('fail', 'Bạn không có quyền xóa yêu cầu này !');
+
+    }
+
+    public function  getResolved()
+    {
+        $allQuestion=Question::where("user_id","=",Auth::user()->id)
+            ->where("solve","=",1)
+            ->orderBy('created_at','desc')->get();
+        return View::make('frontend.question.resolved')->with(array('allQuestion'=>$allQuestion));
+    }
+
+
+    public function getUpdateResolved($id)
+    {
+        if(!is_numeric($id))
+        {
+            return Redirect::back()->with('fail', 'Không tìm thấy dữ liệu');
+        }
+
+        $question = Question::findOrFail($id);
+        if($question->user_id==Auth::user()->id)
+        {
+            $data=array('solve'=>1);
+            $question->update($data);
+            return Redirect::to('/question')->with('success','Cập nhật thành công !');
+
+        }
+        return Redirect::to("/question")->with('fail', 'Bạn không có quyền này !');
+
 
     }
 

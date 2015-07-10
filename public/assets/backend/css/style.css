@@ -1,0 +1,188 @@
+.accounts {
+	max-width: 400px;
+	margin:50px auto;
+	border-radius: 4px;
+}
+.accounts {
+	background-color: #f5f5f9;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.account-header,
+.account-footer {
+	padding: 15px 25px;
+	border-style: solid;
+	border-color: #e4e4e4;
+}
+.account-header {
+	border-width: 0 0 1px;
+}
+.account-footer {
+	border-width: 1px 0 0;
+}
+.account-header span {
+	color: #607080;
+	font-size: 18px;
+	font-weight: 700;
+}
+.account-content {
+	padding: 20px 25px;
+}
+.account-error {
+	font-size: 13px;
+	font-weight: 400;
+}
+.form-field {
+	margin-bottom: 20px;
+}
+.notice
+{
+    margin-top: 50px;
+}
+
+
+table.tablesorter thead tr .header
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+ .reply_block
+{
+
+}
+
+ .reply_block .breadcum
+{
+    background-color: #f1f1f1;
+    height: 28px;
+    padding-top: 6px;
+    padding-left: 10px;
+    border: 1px solid #d7d7d7;
+    position: relative;
+
+}
+
+ .reply_block .breadcum h2
+{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: "Calibri";
+    color: #194d8c;
+    font-weight: bold;
+
+
+}
+
+
+.reply_block .message
+{
+    background-color: #f9f8f8;
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    padding:20px;
+    font-size: 14px;
+    font-family: "Calibri";
+}
+
+
+.reply_admin
+{
+    padding-left:32px;
+}
+ .reply_admin h2
+{
+    color: #ff0000 !important;
+}
+.reply_admin .message
+{
+    color: #ff0000;
+}
+
+
+ .reply_admin img
+{
+    width: 16px;
+    height: 17px;
+    position: absolute;
+    top:4px;
+    left: -23px;
+}
+
+
+
+
+.tri-down {
+
+    /* Styling block element, not required */
+    position: relative;
+
+    padding: 1em;
+    border-bottom: 1px solid #999;
+    background: #f3f3f3;
+}
+
+
+.content  .tri-down:before {
+    bottom: -12px;
+    left: 47px;
+
+    /* If 1px darken stroke slightly */
+    border-top-color: #e6e6e6;
+    border-width: 11px;
+}
+
+
+/* Fill */
+.content  .tri-down:after {
+    bottom: -10px;
+    left: 48px;
+    border-top-color: #f3f3f3;
+    border-width: 10px;
+}
+
+/* Required for Down Triangle */
+.tri-down:before, .tri-down:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+}
+
+/* Stroke */
+.reply_block .tri-down:before {
+    bottom: -12px;
+    left: 21px;
+
+    /* If 1px darken stroke slightly */
+    border-top-color: #e6e6e6;
+    border-width: 11px;
+}
+
+/* Fill */
+.reply_block .tri-down:after {
+    bottom: -10px;
+    left: 22px;
+    border-top-color: #f3f3f3;
+    border-width: 10px;
+}
+
+
+ .block_infomation .question_done
+{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "Calibri";
+    color: #484848;
+     text-indent:-9999;
+}
