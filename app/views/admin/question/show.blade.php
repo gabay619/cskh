@@ -123,7 +123,7 @@
                             <div class="form-group pull-right">
                                 <a href="/admin/question/solved/{{$question->id}}"  class="btn btn-sm btn-primary">Đã giải quyết xong</a>
 
-                                <button class="btn btn-success btn-sm" type="button">Gửi yêu cầu</button>
+                                <button class="btn btn-success btn-sm" type="button">Trả lời</button>
                             </div>
                         </div>
                     </div>

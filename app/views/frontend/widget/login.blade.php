@@ -41,9 +41,8 @@
                  </div>
              </div>
              <div class="btnwrapper">
-
-                 <input type="submit" class="btn btn-primary btn-block btnlogin" onclick="login();" value="Submit">
-
+                 <button type="submit" class="btn btn-primary btn-block btnlogin "> Đăng nhập
+                 </button>
                  <p>Hoặc</p>
                  <a href="#" class="social_fb"></a>
                  <a href="#" class="social_gg"></a>
