@@ -222,6 +222,14 @@ class QuestionController extends \BaseController
         return View::make('frontend.question.resolved')->with(array('allQuestion'=>$allQuestion));
     }
 
+    public function  getReplied()
+    {
+        $allQuestion=Question::where("user_id","=",Auth::user()->id)
+            ->where("replied","=",1)
+            ->orderBy('created_at','desc')->get();
+        return View::make('frontend.question.resolved')->with(array('allQuestion'=>$allQuestion));
+    }
+
 
     public function getUpdateResolved($id)
     {
@@ -233,7 +241,10 @@ class QuestionController extends \BaseController
         $question = Question::findOrFail($id);
         if($question->user_id==Auth::user()->id)
         {
-            $data=array('solve'=>1);
+            $data=array(
+                'solve'=>1,
+                'replied'=>0
+            );
             $question->update($data);
             return Redirect::to('/question')->with('success','Cập nhật thành công !');
 

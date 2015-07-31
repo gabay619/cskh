@@ -8,7 +8,7 @@
      <div class="content_login">
          <p class="yc_new"><a href="/question/create">Yêu cầu hỗ trợ mới</a><a class="new_yc" href=""><img
                  src="/assets/images/icon_new.png" alt=""/></a></p>
-         <p class="yc_replied"><a href="/question">Yêu cầu đã được trả lời({{$countQuestion}})</a></p>
+         <p class="yc_replied"><a href="/question/replied">Yêu cầu đã được trả lời({{$countQuestion}})</a></p>
          <p class="yc_finish"><a href="/question/resolved">Yêu cầu đã kết thúc</a></p>
      </div>
  </div>

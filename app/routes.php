@@ -32,8 +32,6 @@ Route::get('/',array('as'=>'admin.get-dashboard',function()
     return View::make('admin.index');
 }));
 
-
-
 Route::resource('question', 'AdminQuestionController',
     [ 'names' =>
         [
@@ -48,6 +46,8 @@ Route::resource('question', 'AdminQuestionController',
     ]
 );
     Route::get('/question/solved/{id}','AdminQuestionController@getResolved');
+    Route::post('/question/comment/{id}','AdminQuestionController@postComment');
 
 });
+
 Route::get('/question/update-resolved/{id}','QuestionController@getUpdateResolved');
