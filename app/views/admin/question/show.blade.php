@@ -86,7 +86,7 @@
 
                                 </div>
                                 <div class="message">
-                                    {{{$item->content}}}
+                                    {{$item->content}}
                                 </div>
                             </div>
                         @else
@@ -104,34 +104,27 @@
                     @endforeach
 
                     <p class="question_done"></p>
-
-
-
-
                     <div class="" id="block_form_continous">
-                        <div class="col-sm-12 nopadding" >
-                            <div class="form-group">
-                                <label style="font-family: 'Calibri';font-size: 15px;color: #3a3a3a;font-weight: normal" >Nội dung</label>
-                                {{ Form::textarea('content', Input::old('content'), array('class'=>'form-control ','id'=>'contentContainer'))}}
-                    <script>CKEDITOR.replace('contentContainer');</script>
+                        <form action="/admin/question/comment/{{$question->id}}" method="POST">
+                            <div class="col-sm-12 nopadding" >
+                                <div class="form-group">
+                                    <label style="font-family: 'Calibri';font-size: 15px;color: #3a3a3a;font-weight: normal" >Nội dung</label>
+                                    {{ Form::textarea('content', Input::old('content'), array('class'=>'form-control ','id'=>'contentContainer'))}}
+                                <script>CKEDITOR.replace('contentContainer');</script>
+                                </div>
                             </div>
-                        </div>
 
 
 
-                        <div class="col-sm-12" style="padding:15px 0 0px 0; margin:10px 0px 20px 0;border-top:1px solid #dedede;border-bottom:1px solid #dedede" >
-                            <div class="form-group pull-right">
-                                <a href="/admin/question/solved/{{$question->id}}"  class="btn btn-sm btn-primary">Đã giải quyết xong</a>
+                            <div class="col-sm-12" style="padding:15px 0 0px 0; margin:10px 0px 20px 0;border-top:1px solid #dedede;border-bottom:1px solid #dedede" >
+                                <div class="form-group pull-right">
+                                    <a href="/admin/question/solved/{{$question->id}}"  class="btn btn-sm btn-primary">Đã giải quyết xong</a>
 
-                                <button class="btn btn-success btn-sm" type="button">Trả lời</button>
+                                    <input class="btn btn-success btn-sm" type="submit" value="Trả lời" />
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-
-
-
-
-
-        </div>
+            </div>
         </div>
 @endsection

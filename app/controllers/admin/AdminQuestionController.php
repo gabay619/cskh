@@ -223,12 +223,49 @@ class AdminQuestionController extends \BaseController {
         }
 
         $question = Question::findOrFail($id);
-        $data=array('solve'=>1);
+        $data=array(
+            'solve'=>1,
+            'replied'=>0
+        );
 
 
         $question->update($data);
 
         return Redirect::route('admin.question.index')->with('success','Sửa thành công !');
+    }
+
+    public function postComment($id)
+    {
+        //return $id;
+        if(!is_numeric($id))
+        {
+            return Redirect::back()->with('fail', 'Không tìm thấy dữ liệu');
+        }
+        $rules = array(
+            'content' => 'required',
+        );
+
+        $validator = Validator::make($data = Input::all(), $rules);
+
+        if ($validator->fails())
+        {
+            return Redirect::back()->withErrors($validator)->withInput();
+        }
+
+        $content=Input::get('content');
+        $question = Question::findOrFail($id);
+        $data=array('replied'=>1);
+        //update replied
+        $question->update($data);
+
+        //cập nhật comment
+        $comment=new Comment();
+        $comment->question_id=$id;
+        $comment->user_id=Auth::user()->id;
+        $comment->content=$content;
+        $comment->is_admin=1;
+        $comment->save();
+        return Redirect::route('admin.question.index')->with('success','Trả lời thành công !');
     }
 
 
