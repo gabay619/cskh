@@ -41,7 +41,7 @@
                  </div>
              </div>
              <div class="btnwrapper">
-                 <button type="submit" class="btn btn-primary btn-block btnlogin "> Đăng nhập
+                 <button type="button" class="btn btn-primary btn-block btnlogin " onclick="login();"> Đăng nhập
                  </button>
                  <p>Hoặc</p>
                  <a href="#" class="social_fb"></a>
@@ -49,6 +49,13 @@
              </div>
          </form>
          <script>
+         $(function(){
+             $("#txtPassword").keypress(function(e){
+                if(e.which==13){
+                    login();
+                }
+            });
+         });
          function login(){
                  username = $('#txtUsername').val();
                  password = $('#txtPassword').val();
